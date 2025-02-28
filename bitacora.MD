@@ -1,0 +1,5 @@
+# Problema 1
+crear un repositorio local
+# problema 2
+crear un repositorio remoto
+sincronizar
