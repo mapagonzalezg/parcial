@@ -17,5 +17,18 @@ async function loadPolygon(){
 }
 loadPolygon();
 
+async function loadPoints(){
+    let myData2= await fetch('arboles_modelia.geojson');
+    let myPoints= await myData2.json();
+    L.geoJSON(myPoints,
+        {
+            style:{
+                color:"blue"
+            }
+        }
+    ).addTo(map);
+}
+loadPoints();
+
 let btnTrees=document.getElementById('btnTrees');
 btnTrees.addEventListener('click', ()=> alert("hola"));
