@@ -16,3 +16,6 @@ async function loadPolygon(){
     ).addTo(map);
 }
 loadPolygon();
+
+let btnTrees=document.getElementById('btnTrees');
+btnTrees.addEventListener('click', ()=> alert("hola"));
